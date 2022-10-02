@@ -1,1 +1,981 @@
-<h1>project</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #logo
+        {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            height: 100px;
+        border: 0px solid;
+        background-color: #fff;
+        }
+        #logo>img
+        {
+            width: 12%;
+        border: 0px solid;
+        }
+        #logo>div
+        {
+            display: flex;
+            height: 5px;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 95px;
+            margin-left: -10px;
+        border: 0px solid;
+        }
+        #logo>div>div
+        {
+            display: flex;
+            font-size: 12px;
+            margin-right: 70px;
+            color: teal;
+            justify-content: space-between;
+        border: 0px solid;
+        }
+        #logo>div>div>img
+        {
+            width: 15px;
+            height: 15px;
+            margin: 10px 5px;
+            display: flex;
+        border: 0px solid;
+        }
+        #logo>div>div>a>img
+        {
+            width: 15px;
+            height: 15px;
+            margin: 10px 5px;
+            display: flex;
+        border: 0px solid;
+        }
+        p
+        {
+            margin-right: 15px;
+        border: 0px solid;
+        }
+        #bar
+        {
+            margin-top: 10px;
+            background-color: #0087a8;
+            display: flex;
+            justify-content: space-evenly;
+        border: 0px solid;
+        }
+        #bar button
+        {
+            height: 30px;
+            background-color: #0087a8;
+            border: 0px;
+            color: white;
+            font-weight: bold;
+        border: 0px solid;
+        }
+        #btn
+        {
+            margin-left: -250px;
+        border: 0px solid;
+        }
+        #bar2
+        {
+            border-bottom: 10px solid black;
+        border: 1px solid;
+        }
+        #bar2>div
+        {
+            display: flex;
+            justify-content: space-evenly;
+            width: 85%;
+            margin: auto;
+        border: 0px solid;
+        }
+        #bar2 a
+        {
+            margin-top: 17px;
+            color: black;
+        border: 0px solid;
+        }
+        .first
+        {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        border: 0px solid;
+        }
+        .first>div
+        {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        border: 0px solid;
+        }
+        .first>div>div
+        {
+            display:grid;
+            background-color: #eff6f4;
+            width: 30%;
+        border: 0px solid;
+        }
+        .align
+        {
+            display: flex;
+            padding-left: 5px;
+        }
+        .first>div div>a
+        {
+            color: black;
+            margin-bottom: 150px;
+        border: 0px solid;
+        }
+        .second 
+        {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        border: 0px solid;
+        }
+        .second>div
+        {
+            display: grid;
+            margin-bottom: 20px;
+            background-color: #eff6f4;
+            justify-content: space-between;
+        border: 0px solid;
+        }
+        .Bengaluru
+        {
+            width: 80%;
+            margin: auto;
+        border: 0px solid;
+        }
+        .Bengaluru>div>div
+        {
+            display: flex;
+        border: 0px solid;
+        }
+        .Bdown
+        {
+            display: grid;
+        border: 0px solid;
+        }
+        .third 
+        {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        border: 0px solid;
+        }
+        .third>div
+        {
+            display: grid;
+            margin-bottom: 20px;
+            background-color: #eff6f4;
+            justify-content: space-between;
+        border: 0px solid;
+        }
+        #forth
+        {
+            border-color: 0087a8;
+            border: 0px solid;
+        }
+        #forth>div
+        {
+            width: 80%;
+            margin: auto;      
+            border: 0px solid;
+        }
+        #forth>div>div
+        {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            margin: 30px;
+        }
+        #forth>div>div div
+        {
+            display: grid;
+        }
+        .flex
+        {
+            display: flex;
+        }
+        .white
+        {
+            background-color: white;
+            width: 100%;
+            padding-top: 20px;
+        }
+        .teal
+        {
+            background-color: #eff6f4;
+            width: 100%;
+            padding-top: 20px;
+        }
+        .bgm
+        {
+            background-color: #0087a8;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .debug
+        {
+            display: flex;
+        }
+        a
+        {
+            color: black;
+        }
+        .grid
+        {
+            display: grid;
+        }
+        .margin
+        {
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .correct
+        {
+            width: 400px;
+        }
+        .sticky 
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="white">
+        <div id="logo">
+            <img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/logo/d-logo-new.svg" alt="">
+            <div>
+                <div>
+                    <p>WEDNESDAY 28 SEP 2022</p>
+                    <p><b>UPDATED:9:45 IST</b></p>
+                    <a href="https://epaper.deccanherald.com/"><p><b>E-PAPER</b></p></a>
+                    <a href="http://dhclassified.com/"><p><b>CLASSIFIELDS</b> </p></a>
+                </div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/weather/50d.svg" alt="">
+                    <p>BLR 24 C Mist</p>
+                    <p>Sensex: 56638.81-468.71    Nifty: 16902.65-104.75 </p>
+                    <a href="https://www.facebook.com/deccanherald"><img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/fb-nav.svg" alt=""></a>
+                    <a href="https://twitter.com/deccanherald"><img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/twitter-nav.svg" alt=""></a>
+                    <a href="https://www.instagram.com/deccanherald/"><img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/ig-nav.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="teal">
+            <div id="bar">
+                <div></div>
+                    <div id="btn">
+                        <a href="https://www.deccanherald.com/"><button>Home</button></a>
+                        <a href="https://www.deccanherald.com/bengaluru"><button>Bengaluru</button></a>
+                        <a href="https://www.deccanherald.com/karnataka"><button>Karnataka</button></a>
+                        <a href="https://www.deccanherald.com/nation"><button>National</button></a>
+                        <a href="https://www.deccanherald.com/sports"><button>Sports</button></a>
+                        <a href="https://www.deccanherald.com/business"><button>Business</button></a>
+                        <a href="https://www.deccanherald.com/opinion-0"><button>Opinion</button></a>
+                        <a href="https://www.deccanherald.com/supplements-0"><button>Features</button></a>
+                        <a href="https://www.deccanherald.com/video"><button>Videos</button></a>
+                        <a href="https://www.deccanherald.com/brandspot"><button>Blindspot</button></a>
+                        <a href="https://www.deccanherald.com/specials.html"><button>Specials</button></a>
+                        <a href="https://www.deccanherald.com/newsletters"><button>New<br>NewsLetter</button></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div id="bar2">
+            <div>
+                <p><b>IN BRIEF:</b></p>
+            <a href="https://www.deccanherald.com/national/national-politics/aap-announces-10-day-padyatra-from-ayodhya-to-prayagraj-1148904.html">AAP announces 10-day padyatra</a>
+            <a href="https://www.deccanherald.com/sports/football/messi-in-100-club-as-argentina-streak-continues-with-jamaica-defeat-1148890.html">Messi enters 100 club</a>
+            <a href="https://www.deccanherald.com/opinion/first-edit/the-tragic-story-of-ankita-bhandari-1148836.html">Ankita Bhandari's tragic story</a>
+            <a href="https://www.deccanherald.com/national/what-is-the-pfi-why-has-it-been-banned-1147203.html">What is PFI?</a>
+            <a href="https://www.deccanherald.com/business/business-news/elon-musk-and-twitter-dig-for-evidence-as-trial-looms-1148865.html">Musk,Twitter dig for evidence</a>
+            <a href="https://www.deccanherald.com/international/world-news-politics/us-wants-un-security-council-be-made-more-inclusive-1148864.html">US wants more inclusive UNSC</a>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="first">
+            <div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/09/28/pti04142022000050a11-1148945-1664356531.jpg?itok=oUUoRrwU" alt="">
+                    <a href="https://www.deccanherald.com/national/national-politics/kharge-not-averse-to-contesting-aicc-prez-post-if-sonia-gandhi-asks-1148945.html">Kharge may contest Congress prez polls if Sonia asks</a>
+                </div>
+                <div>
+                    <div class="align"> 
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/asaduddin-owaisi-1148924-1664352937.jpg?itok=SSfmSyNl" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/national/north-and-central/every-muslim-will-now-be-arrested-cant-support-draconian-ban-on-pfi-says-owaisi-1148924.html"> PFI ban draconian all muslims now be held...</a></div>
+                    </div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/pti09232022000139a1-1148936-1664354799.jpg?itok=lHmKO-so" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/national/kerala-on-high-alert-after-pfi-ban-1148936.html">Kerala on high alert after PFI ban</a></div>
+                    </div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/gehlot-pti-new-1148896-1664343533.jpg?itok=VH-QhQ1R" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/national/national-politics/ashok-gehlot-to-fly-to-delhi-today-likely-to-meet-sonia-gandhi-1148896.html">Ashok Gehlot to fly to Delhi today, likely to meet...</a></div>
+                    </div>
+                </div>
+                <div>
+                    <h1>Space for ad.</h1>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/nitish-and-prshant-1-1148915-1664349753.jpg?itok=PCcDUZdx" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/sports/cricket/ind-vs-sa-t20is-shami-hooda-ruled-out-umesh-yadav-shreyas-iyer-named-as-replacements-1148915.html">Ind vs SA T20is:Umesh, Shreyas to replace Shami,...</a></div>
+                    </div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/kashmir-apples-afp-1148949-1664356775.png?itok=YBnXPhbN" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/opinion/valleys-apple-crush-losses-spark-narrative-of-discrimination-1148949.html">Losses to Valley's apple spark talk of dicrimination...</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/breaking-news-live-updates-today-india-news-rahul-gandhi-bharat-jodo-yatra-congress-bjp-congress-covid-september-28-1148868.html">News Live: AK Antony to meet Congress president Sonia Gandi at 5p.m.</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/now-banned-pfi-was-under-radar-of-government-agencies-for-long-1148914.html">Now-banned PFI was under govt agencies  radar for long</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/north-and-central/asi-discovers-20-buddhist-caves-in-madhya-pradesh-s-bandhavgarh-1148941.html">ASI discovers 20 buddhist caves in MP's Bandhavgarh</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/national-politics/congress-against-all-ideologies-institutions-that-abuse-religion-to-polarise-society-says-jairam-ramesh-1148929.html">'Cong against all institions that misuse religion'</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/international/in-court-brief-elon-musk-says-the-sec-is-unlawfully-muzzling-him-1148916.html">In court brief, Musk says SEC unlawfully 'muzzling him'</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/fdusiaiacaauils-1148910-1664347919.jpg?itok=-B2Muy7S" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/national/east-and-northeast/lalu-yadav-files-nomination-for-rjd-president-post-1148910.html">Lalu Yadav nomination for RJD president post...</a></div>
+                    </div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/banned-g843d908e319201-1148905-1664348991.jpg?itok=Y-YuVD5B" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/national/pfi-ltte-full-list-of-organisations-banned-in-india-1148905.html">PFI,LTTE: Full list of organisations banned in India...</a></div>
+                    </div>
+                    <div class="align">
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/fire-27775801280-1-1148934-1664354710.jpg?itok=1vOCM8zq" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/international/17-dead-in-restaurant-fire-in-china-1148934.html">17 dead in restaurant fire in China</a></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="white">
+        <div class="second">
+            <div>
+                <h2>MORE TOP STORIES</h2>
+                <div class="align">
+                    <div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/pfi-shaheen-bagh-delhi-pti-1148939-1664355233.jpg?itok=gQVA3JNh" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/national/north-and-central/pfi-ban-security-tightened-at-shaheen-bagh-drones-deployed-1148939.html">PFI ban: Security tightened at Shaheen Bagh </a></div>
+                        </div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/plane-istock-1148937-1664357191.jpg?itok=1y-wFvBp" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/international/world-news-politics/fighter-jets-escort-singapore-airlines-plane-over-bomb-hoax-1148937.html">Bomb hoax: Fighter jets escort Singapore Airlines plane...</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/slidable-pc-intel-newsroom-1148922-1664352002.jpg?itok=dEvMyo3z" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/business/business-news/samsung-intel-showcase-worlds-first-slideable-pc-1148922.html">Samsung,Intel showcase world's first 'slideable' PC</a></div>
+                        </div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/fduxtrwuyaex8qi-1148918-1664356707.jpg?itok=Xf1TmpDL" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/national/national-politics/today-congress-has-become-directionless-himachal-cong-committee-president-harsh-mahajan-joins-bjp-1148918.html">HP Congress Commitee prez Harsh Mahajan joins BJP...</a></div>
+                        </div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/idninsjns-1148900-1664344313.jpg?itok=tUy1PRiI" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/entertainment/entertainment-news/tollywood-star-mahesh-babus-mother-passes-away-condolences-pour-in-1148900.html">Tollywood star Mahesh Babu's Mother passes away</a></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="teal">
+        <div class="Bengaluru">
+            <div>
+                <h2>Bengaluru</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/28/high-court-2-1-985264-1620879698-988067-1621553915-988911-1621720988-1148855-1664308059.jpg?itok=_0fKwYUi" alt="">
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/city/top-bengaluru-stories/karnataka-high-court-to-hear-petitions-challenging-bbmp-ward-reservation-on-september-28-1148855.html">HC to hears<br>petitions<br>challenging BBMP<br> ward reservation</a>
+                        <p>28 Sep 2022</p>
+                    </div>
+                    <div>
+                        <div><img class="correct" src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/09/28/police-istock-2-1148781-1664331523.jpg?itok=KBVXaUL4" alt="a"></div>
+                        <div><a href="https://www.deccanherald.com/city/bengaluru-crime/police-solve-mystery-of-bengaluru-boys-filmy-style-kidnap-from-luxury-villa-1148781.html">Police solve mystery of B'luru boy's filmy<br>style kidnap...</a>
+                        <p>7:48 a.m.</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/28/file7mxjscie2r81kqqkf55g-1148840-1664324870.jpg?itok=lf_nzBMz" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/city/life-in-bengaluru/140-durga-puja-pandals-to-come-up-in-bengaluru-1148840.html">140 Durga puja pandals to<br>come up in Bengaluru...</a>
+                        <p>5:57 a.m.</p></div>
+                    </div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/27/bel-road-dh-1148798-1664299430.jpg?itok=MT7UidwI" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/city/bengaluru-infrastructure/substandard-work-on-bel-road-bbmp-suspends-2-engineers-1148798.html">Substandard work on Bel<br>Roads:BBmp suspends 2<br>engineers...</a>
+                        <p>27th Sep 2022</p></div>
+                    </div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/28/clipboard-34-1148768-1664305253.jpg?itok=rlBchkJd" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/city/top-bengaluru-stories/i-like-bengaluru-very-much-says-president-droupadi-murmu-1148768.html">I like Bengaluru very<br>much,says President<br>Murmu...</a>
+                        <p>28h Sep 2022</p></div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="white">
+        <div class="second">
+            <div>
+                <h2>Karnataka</h2>
+                <div  class="align">
+                    <div></div>
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/transgenders-dh-1148839-1664354938.jpg?itok=ztZOcs0I" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/mysuru/transgenders-menace-affects-mysuru-s-image-say-citizens-1148839.html">Transgenders' menace affects Mysuru's image:Citizens</a>
+                    <p>57 mins ago</p></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/pti09222022000060b2-1148921-1664351868.jpg?itok=5ueMbkRY" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/top-karnataka-stories/pfi-ban-long-pending-even-opposition-in-favour-of-it-bommai-1148921.html">PFI ban long - pending, even Oppn in favor of it:...</a>
+                    <p>an hour ago</p></div>
+                </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/27vcs-1-1148909-1664347228.jpg?itok=bF4o_jMX" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/mangaluru/mangalore-university-to-offer-dual-degree-programme-at-ug-pg-level-from-next-year-1148909.html">Mangalore Uni to offer dual degree optio next...</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/araga-jnanendra-dh-1148894-1664343284.jpg?itok=YHW25fB9" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/top-karnataka-stories/ktaka-home-minister-araga-jnanendra-hails-ban-on-pfi-security-tightened-across-state-1148894.html">Karnataka Home Minister Jnanendra hails ban on PFI...</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/farm-istock-1148853-1664331278.jpg?itok=7izfTUMt" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/top-karnataka-stories/rs-442-cr-went-to-ineligible-dead-farmers-under-pm-kisan-in-karnataka-1148853.html">PM-KISAN" ineligible, dead farmers given Rs 442 crore...</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="second">
+            <div>
+                <h2>MORE FROM KARNATAKA DISTRICTS</h2>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/exam-paper-istock-1121426-1656173857-1125962-1657657358-1148902-1664344681.jpg?itok=ZKa3cqRc" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/karnataka-districts/action-against-boe-says-mangalore-university-vc-after-question-paper-blunder-1148902.html">Verdict on Malali mosque row on October 17...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/27/cop-1137452-1660901315-1139921-1662045236-1148833-1664300022.jpg?itok=7XiB_jiK" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/karnataka-districts/local-rss-leader-s-car-vandalised-with-obscene-messages-in-kadur-1148833.html">Question paper blinder:action against BoE, says MU VC...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/cop-1137452-1660901315-1139921-1662045236-1148833-1664300022.jpg?itok=6W_wN_1H" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/karnataka-districts/local-rss-leader-s-car-vandalised-with-obscene-messages-in-kadur-1148833.html">Local RSS leader's car vandalised in kadur</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/train-dh-1148808-1664299802.jpg?itok=MuqP0ZJI" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/state/karnataka-districts/hubballi-ankola-rail-line-central-team-visits-project-site-1148808.html">Hubbali-Ankola rail line: Central team visits site</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/hubballi-1148784-1664298616.jpg?itok=Ijatfwx0" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/business/business-news/hubballi-startup-wants-to-open-weapon-manufacturing-unit-ready-to-unveil-modular-pistol-1148784.html">Hubbali startup wants start weapon manufacturing</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="teal">
+        <div class="second">
+            <div>
+                <h2>NATIONAL</h2>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/nse-1126618-1657796489-1149023-1664365403.jpg?itok=nAHLPYo5" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/national/delhi-high-court-seeks-eds-stand-on-bail-plea-by-former-nse-md-chitra-ramkrishna-in-money-laundering-case-1149023.html">HC seek ED's stand on bail plea by former...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/priyanka-gandhiians-1149022-1664364953.jpg?itok=iMg9eLYs" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/national/national-politics/congress-mp-abdul-khaleque-backs-priyanka-gandhi-vadra-for-party-president-post-1149022.html">Cong MP backs Priyanka for party president post...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/bjp-flag-re-1149021-1664364857.jpg?itok=b9VbhqR7" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/national/timely-action-congress-patronised-it-bjp-on-pfi-ban-1149021.html">Timely action, Congress patronised it:BJP on PFI ban...</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/sdpi-1149019-1664364296.jpg?itok=0U97xuwW" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/national/national-politics/sdpi-terms-ban-on-pfi-direct-blow-to-democracy-1149019.html">SDPI terms ban on PFI 'direct blow to democracy'...</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/scpti-1149017-1664364167.jpg?itok=f6gBYj13" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/national/sc-pulls-up-centre-for-delay-on-decision-in-convicts-mercy-plea-1149017.html">SC pulls up Centre for delay in decision on...</a></div>
+                </div>
+            </div>
+            <div>
+               <a href="https://www.deccanherald.com/national/national-politics/hatred-wont-allow-building-a-nation-rahul-1148856.html"><img src="https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/09/28/speak-out-68-1148857-1664308360.jpg?itok=fA8Rf8tu" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="third">
+            <div>
+                <h2>BUSINESS</h2>
+                <div>
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/28/inflation-grains-india-reuters-1149020-1664364333.png?itok=Z9nY1Gnr" alt=""></div>
+                    <div><a href="https://www.deccanherald.com/national/govt-extends-free-ration-scheme-for-poor-by-3-months-1149020.html">Govt extends free ration scheme for poor by 3... </a>
+                    <p>28th Sep 2022</p></div>
+                 </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/sunflower-1148991-1664361377.jpg?itok=L9WKS0ui" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/business/business-news/sunflower-oil-prices-slide-as-ukraine-resumes-supply-1148991.html">Sunflower oil prices slides as Ukraine resume supply...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/tiagopti-1148987-1664360841.jpg?itok=_MFPzm9r" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/business/dh-wheels/tata-launches-electric-tiago-indias-most-affordable-ev-1148987.html">Tata launches India's most affordable EV,Tiago</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/kashmir-apples-afp-1148949-1664356775.png?itok=WLNjMPec" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/opinion/valleys-apple-crush-losses-spark-narrative-of-discrimination-1148949.html">Losses to valley's apple spark talk of discimination</a></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/istock-1155281861-1008581-1626276338-1148884-1664341770.jpg?itok=i5khPyy3" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/business/economy-business/wrong-hyundai-to-manufacturing-gaps-indias-subsidy-policies-see-misfires-1148884.html">Oops, wrong Hyundai! Centre's subsidies misfire, again</a></div>
+                </div>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/istock-1155281861-1008581-1626276338-1148884-1664341770.jpg?itok=i5khPyy3" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/opinion/in-perspective/an-agnipath-for-the-ias-1148834.html">An 'agnipath' for the IAS</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="teal">
+        <div class="second">
+            <div>
+                <h2>SPORTS</h2>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/bumrah-ap-1149018-1664364184.jpg?itok=7GQhysjU" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/sports/cricket/bumrah-in-waughs-top-five-for-t20-world-cup-1149018.html">Bumrah in Waugh's top-five for T20 World Cup</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/suryakumar-yadav-afp-1148971-1664359407.jpg?itok=I8oVnEu-" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/sports/cricket/suryakumar-rohit-rise-in-icc-t20i-player-rankings-1148971.html">Suryakumar, Rohit rise in ICC t20I Player Rankings...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/award-istock-1148966-1664359113.jpg?itok=z073k1qG" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/sports/sports-ministry-extends-last-date-of-submission-of-application-for-national-sports-awards-1148966.html">Sports Awards:Deadline to submit applicatis extended</a></div>
+                </div>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/naseem-afp-1148944-1664356400.jpg?itok=_oY5DPrO" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/sports/cricket/naseem-shah-rushed-to-hospital-with-viral-infection-to-miss-5th-t20i-against-england-1148944.html">Viral infection rules Naseem out of 5th T20I versus...</a></div>
+                </div>
+                <div  class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/jeje-lalpekhlua-pti-1148932-1664353981.jpg?itok=4wF9TDXC" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/sports/football/indian-u-17-team-registers-3-1-win-over-10-man-oman-in-football-friendly-1148932.html">Indian U-17 team registers 3-1 win over 10-man Oman...</a></div>
+                </div>
+            </div>
+            <div>
+               <a href="https://www.deccanherald.com/national/centre-declares-pfi-unlawful-bans-it-for-five-years-1148870.html">Centre declares PFI 'unlawful', bans it for five years</a>
+               <a href="https://www.deccanherald.com/national/centre-has-declared-pfi-unlawful-what-does-that-mean-1148912.html">Centre bans PFI:What does that mean?</a>
+               <a href="https://www.deccanherald.com/international/world-news-politics/irans-anti-veil-protests-draw-on-long-history-of-resistance-1148923.html">Iran's anti-veil protests draw on history of resistance</a>
+               <a href="https://www.deccanherald.com/international/world-news-politics/truth-or-bluff-why-putins-nuclear-warnings-have-the-west-worried-1148925.html">Why Putin's nuclear warnings have the West worried</a>
+               <a href="https://www.deccanherald.com/business/economy-business/wrong-hyundai-to-manufacturing-gaps-indias-subsidy-policies-see-misfires-1148884.html">Oops, wrong Hyundai Centre's subsidies misfire,again</a>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="Bengaluru">
+            <div>
+                <h2>INTERNATIONAL</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/28/2022-09-28t011937z1496437715rc2xpw943b9drtrmadp3iran-women-mexicojpg-1149010-1664363431.jpg?itok=lUu62_iS" alt="">
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/international/world-news-politics/irans-nationwide-protests-pile-pressure-on-state-1149010.html">Iran's nationwide protestspile pressure on state</a>
+                        <p>28 Sep 2022</p>
+                    </div>
+                    <div>
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/28/missile-representative-ians-1148996-1664361783.jpg?itok=jfn0y5KX" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/international/world-news-politics/north-korea-fires-ballistic-missile-off-east-coast-says-south-korean-military-1148996.html">North Korea fires ballistic off east coast...</a>
+                        <p>7:48 a.m.</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="Bdown">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/28/nord-streamafp-1148999-1664362289.jpg?itok=yBrNBB_Q" alt="">
+                        <a href="https://www.deccanherald.com/international/world-news-politics/kremlin-dismisses-stupid-claims-russia-attacked-nord-stream-1148999.html">Kremlin dismisses claims Russia attaced Nord Stream</a>
+                        <p>28th Sep 2022</p>
+                    </div>
+                    <div class="Bdown">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/28/nordstreamafp-1148998-1664362196.jpg?itok=KMzZ6aIO" alt="">
+                        <a href="https://www.deccanherald.com/international/world-news-politics/eu-warns-of-robust-and-united-response-over-suspected-pipeline-sabotage-1148998.html">EU warns of response over suspected pipeline sabotage...</a>
+                        <p>28th Sep 2022</p>
+                    </div>
+                    <div class="Bdown">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/28/cake-1148947-1664361847-1148947-1664361932.jpg?itok=MpQp-rgs" alt="">
+                        <a href="https://www.deccanherald.com/international/world-trending/us-woman-sends-resume-on-cake-to-nike-internet-divided-1148947.html">US woman send resume on cake to Nike internet...</a>
+                        <p>28th Sep 2022</p>
+                    </div>
+                    <div>
+                        <div><img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/28/putin-reuters-1148989-1664361034.jpg?itok=Hd9YIKO-" alt=""></div>
+                        <div><a href="https://www.deccanherald.com/international/occupied-ukrainian-regions-to-ask-putin-to-annex-them-1148989.html">Occupied Ukrainian regions to ask Putin to annex them...</a>
+                        <p>28th Sep 2022</p></div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="Bengaluru">
+            <div>
+                <h2>SUPPLEMENTS</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/28/file7mxjpm0rzue11swprmy1-1148845-1664325079.jpg?itok=QqQQ4wyd" alt="">
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/dasara-doll-display-features-games-composers-1148845.html">Dasara doll play feature games,composers</a>
+                        <p>28 Sep 2022</p>
+                    </div>
+                    <div>
+                        <div class="margin">
+                            <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/28/file7mxja7zy7rpi0przomk-1148846-1664340852.jpg?itok=R20Or6Te" alt="">
+                            <a href="https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/thalis-are-in-demand-this-navratri-1148846.html">Thalis are in demand this Navratri</a>
+                        </div>
+                        <div class="margin">
+                            <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/23/file7mv2onsojdyc0wp35mp-1147459-1663886707.jpg?itok=EykZ-bRR" alt="">
+                            <a href="https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/more-b-lureans-are-turning-to-arranged-marriages-since-covid-1147459.html">More B'lureans are turning to arranged marriages</a>
+                        </div>
+                        <div class="margin">
+                            <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/23/img3292-1147463-1663887334.jpeg?itok=Jng65J6t" alt="">
+                            <a href="https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/puneeth-rajkumar-dolls-on-sale-this-dasara-season-1147463.html">Puneeth Rajkumar dolls on sale this Dasara season...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="second">
+            <div>
+                <h2>ENTERTAINMENT</h2>
+                <div>
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/28/rsig-1149026-1664365982.jpg?itok=HNn0XC4Y" alt=""></div>
+                    <div><a href="https://www.deccanherald.com/entertainment/entertainment-news/raju-srivastava-regarded-amitabh-bachchan-as-guru-ji-says-comedians-daughter-1149026.html">Raju Srivastava regarded Amitabh Bachchan as 'Guru ji'...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/fdqyafeaaaacs7c-1148997-1664361927.jpg?itok=rqlrKZR0" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/entertainment/entertainment-news/rishab-shetty-opens-up-on-his-acting-career-1148997.html">Rishab Shetty opens up on his acting career...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+                <div class="align">
+                    <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/09/28/malala-reuters-1148960-1664358429.jpg?itok=5az81zBk" alt=""></div>
+                    <div class="margin"><a href="https://www.deccanherald.com/international/world-news-politics/malala-yousafzais-production-banner-unveils-first-slate-with-apple-tv-1148960.html">Malala's production firm unveils first slate with Apple...</a>
+                    <p>28th Sep 2022</p></div>
+                </div>
+            </div>
+            <div>
+               <a href="https://www.deccanherald.com/national/centre-declares-pfi-unlawful-bans-it-for-five-years-1148870.html">Centre declares PFI 'unlawful', bans it for five years </a>
+               <a href="https://www.deccanherald.com/national/national-politics/adhir-demands-honourable-treatment-for-cong-in-parliament-seeks-leadership-of-substantive-panel-1147897.html">Adhir seeks chairmanship for cong in Parliament panel</a>
+               <a href="https://www.deccanherald.com/entertainment/the-simpsons-did-not-predict-queen-elizabeth-iis-death-1147537.html">'The Simpsons' didn't predict Queen Elizabeth's death</a>
+               <a href="https://www.deccanherald.com/national/north-and-central/sc-rejects-plea-against-denial-to-sanction-adityanath-s-prosecution-in-alleged-hate-speech-case-1139625.html">SC junks plea against Adityanath in 'hate speech' case</a>
+               <a href="https://www.deccanherald.com/national/national-politics/ghulam-nabi-becomes-azad-from-congress-with-a-scathing-attack-on-rahul-sonia-1139466.html">Azad quits Cong with scathing attack on Rahul, Sonia</a>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="Bengaluru">
+            <div>
+                <h2>Supplements</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/25/file7mtwiumgc09v9cpi97w-1147679-1664051401.jpg?itok=8qn129yY" alt="">
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/sunday-herald/sunday-herald-melange/better-than-all-treasures-that-in-books-are-found-1147679.html">Bettter than all treasures that in books are found...</a>
+                        <p>25th Sep 2022</p>
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/national/editors-note-dh-launches-android-ios-app-846095.html"><img src="https://www.deccanherald.com/sites/dh/themes/deccanherald/images/app_banner_home.jpg" alt=""></a>
+                        <p>7:48 a.m.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="Bdown">
+                        <a href="https://www.deccanherald.com/sunday-herald/sh-top-stories/the-moon-man-1147342.html">The Moon Man</a>
+                        <p>25th Sep 2022</p>
+                    </div>
+                    <div class="Bdown">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/25/file7mrst9s5zdt1fzkxbe8f-1147349-1664047801.jpg?itok=HyfasW6E" alt="">
+                        <a href="https://www.deccanherald.com/sunday-herald/sh-top-stories/perennial-pols-of-ahmedabad-1147349.html">Perennial pols of Ahemdabad</a>
+                        <p>25th Sep 2022</p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="teal">
+        <div class="Bengaluru">
+            <div>
+                <h2>Specials</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/28/flipkart-logo-reuters-1148953-1664360797.jpg?itok=BP1678nr" alt="">
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/business/technology/flipkart-big-billion-days-2022-best-deals-on-smart-watches-1148953.html">Big Billion Days 2022:Best deals on smart watches</a>
+                        <p>28th Sep 2022</p>
+                    </div>
+                    <div>
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/09/27/flipkart-reuters-cs-2-1148542-1664223973.jpeg?itok=YSnw5AT3" alt=""></div>
+                        <div class="margin"><a href="https://www.deccanherald.com/business/technology/flipkart-big-billion-days-2022-top-smart-tv-deals-1148542.html">Flipkart Big Billion Days 2022:Top Smat TV deals...</a>
+                        <p>27th Sep 2022</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/27/apple-logo-reuters-1148726-1664287809.jpg?itok=p321Ce0h" alt=""></div>
+                        <div class="margin"><a href="https://www.deccanherald.com/business/technology/apple-unlikely-to-host-hardware-event-next-month-1148726.html">Apple unlikely to host hardware event next month...</a>
+                        <p>27th Sep 2022</p></div>
+                    </div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/27/amazon-logo-reuters-file-photo-1148705-1664287848.jpg?itok=t9KWyU0s" alt=""></div>
+                        <div class="margin"><a href="https://www.deccanherald.com/business/technology/amazon-great-indian-festival-sale-2022-best-smart-tv-deals-1148705.html">Amazon Great Indian Festival2022:Best smart TV deals</a>
+                        <p>27th Sep 2022</p></div>
+                    </div>
+                    <div class="Bdown">
+                        <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/09/27/oneplus-nord-watch-teaser-2-1148636-1664272299.jpg?itok=pPPtjPE6" alt=""></div>
+                        <div class="margin"><a href="https://www.deccanherald.com/business/technology/oneplus-reveals-more-nord-watch-features-ahead-of-launch-1148636.html">OnePlus reveals more Nord Watch features</a>
+                        <p>27th Sep 2022</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="Bengaluru">
+            <div>
+                <h2>SCIENCE & ENVIRONMENT</h2>
+                <div>
+                    <div class="margin">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/09/28/drought-afp-1148986-1664360603.jpg?itok=zFTiBEWe" alt="">
+                    </div>
+                    <div class="margin">
+                        <a href="https://www.deccanherald.com/science-and-environment/global-warming-may-lead-to-more-frequent-longer-lasting-droughts-in-india-1148986.html">Global warming mey lead to frequent drought in India</a>
+                        <p>28 Sep 2022</p>
+                    </div>
+                    <div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/nasa-1-1148647-1664294389.jpg?itok=GA3QoTFu" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/science-and-environment/explained-why-nasa-crashed-a-spacecraft-into-an-asteroid-1148647.html">Why NASA crashed a spacecraft into an asteroid...</a></div>
+                        </div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/iit-madras-pti-1148722-1664286962.jpg?itok=tuKB7Vq4" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/science-and-environment/iit-m-study-predicts-retained-efficacy-of-spike-protein-vaccines-against-covid-19-variants-1148722.html">Spike protein vax may be effective on Covid variants...</a></div>
+                        </div>
+                        <div class="align">
+                            <div class="margin"><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/09/27/cpr-1-1148702-1664282099.jpg?itok=RH-eE-6H" alt=""></div>
+                            <div class="margin"><a href="https://www.deccanherald.com/science-and-environment/cpr-can-save-70-of-cardiac-arrest-patients-experts-1148702.html">CPR can save 70% of cardiac arrest patients: Experts...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgm">
+        <div id="forth">
+            <div>
+                <div>
+                    <div>
+                        <a href="https://www.deccanherald.com/nation">NATIONAL</a>
+                        <a href="https://www.deccanherald.com/nation/national-politics">Politics</a>
+                        <a href="https://www.deccanherald.com/nation/north-central">North and Central</a>
+                        <a href="https://www.deccanherald.com/south">South</a>
+                        <a href="https://www.deccanherald.com/nation/east-and-northeast">East and Northeast</a>
+                        <a href="https://www.deccanherald.com/nation/west">West</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/karnataka">Karnataka</a>
+                        <a href="https://www.deccanherald.com/state/top-karnataka-stories-sec">Tp Stories</a>
+                        <a href="https://www.deccanherald.com/state/politics-sec">Politics</a>
+                        <a href="https://www.deccanherald.com/state/districts-sec">Districts</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/bengaluru">BENGALURU</a>
+                        <a href="https://www.deccanherald.com/bengaluru/top-bengaluru-stories">Top Stories </a>
+                        <a href="https://www.deccanherald.com/bengaluru/crime">Bengaluru Crime</a>
+                        <a href="https://www.deccanherald.com/bengaluru/politics">Politics</a>
+                        <a href="https://www.deccanherald.com/bengaluru/infrastructure">Infrastructure</a>
+                        <a href="https://www.deccanherald.com/bengaluru/life-in-the-city">Life in the City</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/sports">SPORTS</a>
+                        <a href="https://www.deccanherald.com/sports/cricket">Cricket</a>
+                        <a href="https://www.deccanherald.com/sports/formula-1">Formula 1 with DH</a>
+                        <a href="https://www.deccanherald.com/sports/football">Football</a>
+                        <a href="https://www.deccanherald.com/sports/tennis">Tennis</a>
+                        <a href="https://www.deccanherald.com/sports/sportscene">Sportscene</a>
+                        <a href="https://www.deccanherald.com/sports/other-sports">Other Sports</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/business">BUSINESS</a>
+                        <a href="https://www.deccanherald.com/business-sec">Business News </a>
+                        <a href="https://www.deccanherald.com/family-finance">Family Finance</a>
+                        <a href="https://www.deccanherald.com/technology">Technology</a>
+                        <a href="https://www.deccanherald.com/dh-wheels">DH Wheels</a>
+                    </div>
+                    <div>
+                        <p>MULTIMEDIA</p>
+                        <a href="https://www.deccanherald.com/video">Videos</a>
+                        <a href="https://www.deccanherald.com/photos">Photos</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/opinion-0">OPINION</a>
+                        <a href="https://www.deccanherald.com/Opinion">DH Views</a>
+                        <a href="https://www.deccanherald.com/first-edit">Editorials</a>
+                        <a href="https://www.deccanherald.com/panorama">Panrama</a>
+                        <a href="https://www.deccanherald.com/main-article">Comment</a>
+                        <a href="https://www.deccanherald.com/in-perspective">In Perspective</a>
+                        <a href="https://www.deccanherald.com/right-in-the-middle">Right in the Middle</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/entertainment">ENTERTAINMENT</a>
+                        <a href="https://www.deccanherald.com/entertainment-cat">Entertainment News</a>
+                        <a href="https://www.deccanherald.com/tag/showtime">DH Showtime/a>
+                        <a href="https://www.deccanherald.com/DH-Talkies">DH Talkies</a>
+                        <a href="https://www.deccanherald.com/arts-books-culture">Arts,Books&Culture</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/national-politics/ashok-gehlot-to-not-contest-congress-presidential-poll-1149302.html">GEHLOT OUT OF CONG PREZ RACE</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/sports/cricket/jasprit-bumrah-ruled-out-of-t20-world-cup-1149309.html">BUMRAH RULED OUT OF T20WC</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/national/north-and-central/unmarried-woman-can-undergo-abortion-up-to-24-weeks-sc-1149245.html">SC UPHOLDS RIGHT OF UNMARRIED WOMAN TO ABORT</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/gallery-categories/dh-galleries">DH PHOTO GALLERY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div id="forth">
+            <div>
+                <div>
+                    <div>
+                        <h3></h3>
+                        <a href="https://www.deccanherald.com/business/business-news/rupee-recovers-from-record-lows-to-close-at-8173-against-dollar-ahead-of-rbi-policy-1149441.html">All eys on MPC meet as rupee recovers from record low</a>
+                        <a href="https://www.deccanherald.com/national/india-climbs-six-notches-to-40th-position-in-global-innovation-index-2022-1149444.html">India breaks into top 40 in Global Innovation Index</a>
+                        <a href="https://www.deccanherald.com/national/retired-lt-gen-anil-chauhan-to-take-charge-as-new-cds-on-september-30-1149447.html">Anil Chauhan to take charge as CDS today</a>
+                        <a href="https://www.deccanherald.com/national/woman-alone-has-right-to-decide-on-abortion-sc-1149437.html">Woman alone has right to decide on abortion:SC</a>
+                        <a href="https://www.deccanherald.com/business/business-news/indias-external-debt-declines-by-25-bn-in-q1-fy23-1149420.html">India's external debt declines by 2.5bn in Q1 FY23</a>
+                    </div>
+                    <div>
+                        <h3></h3>
+                        <a href="https://www.deccanherald.com/international/world-news-politics/vladimir-putin-says-mistakes-of-military-mobilisation-should-be-corrected-1149523.html">Putin says mistakes of mobilisation should be corrected</a>
+                        <a href="https://www.deccanherald.com/metrolife/metrolife-lifestyle/the-musical-sideof-a-physicist-1149522.html">The musical sideof a physicist</a>
+                        <a href="https://www.deccanherald.com/metrolife/metrolife-cityscape/gallery-walks-of-show-on-mail-art-this-weekend-1149521.html">Gallery walks of show on mail art this weekend</a>
+                        <a href="https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/art-tribute-to-gandhi-opens-on-monday-1149520.html">Art tribute to Gandhi opens on Monday</a>
+                        <a href="https://www.deccanherald.com/metrolife/metrolife-cityscape/bengaluru-s-unique-sitar-symphony-to-play-at-mysuru-palace-for-dasara-1149519.html">Bengaluru's unique sitar symphony to play in Mysuru</a>
+                    </div>
+                    <div>
+                        <h3></h3>
+                        <a href="https://www.deccanherald.com/city/bengaluru-infrastructure/karnataka-govt-excludes-marathahalli-from-namma-metro-plans-1148496.html">Govt excludes Marathahalli from Namma Metro plans</a>
+                        <a href="https://www.deccanherald.com/city/bengaluru-crime/police-solve-mystery-of-bengaluru-boys-filmy-style-kidnap-from-luxury-villa-1148781.html">Police solve mystery of B'luru boys filmy style kidnap</a>
+                        <a href="https://www.deccanherald.com/opinion/why-should-my-us-born-and-bred-son-know-about-caste-1148051.html">Why should my US-born-and-bred son know about caste?!</a>
+                        <a href="https://www.deccanherald.com/city/top-bengaluru-stories/karnataka-govt-tables-bill-for-london-like-transport-authority-in-bengaluru-1147706.html">Bill for London-like transport authority in Bengaluru</a>
+                        <a href="https://www.deccanherald.com/business/business-news/demolition-drive-alarms-potential-property-buyers-in-bengaluru-1148419.html">Demolition drive alarms property buyers in Bengaluru</a>
+                    </div>
+                    <div>
+                        <h3>DOWNLOAD DH APP</h3>
+                        <div class="flex">
+                            <a href="https://play.google.com/store/apps/details?id=com.tpml.dh"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/android.svg" alt=""></a>
+                            <a href="https://apps.apple.com/us/app/deccan-herald-news/id1511179557"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/ios.svg" alt=""></a>
+                        </div>
+                        
+                        <h3>SERVICES</h3>
+                        <div class="flex">
+                            <a href="http://printersmysore.com/">About</a>
+                            <a href="https://epaper.deccanherald.com/">Epaper</a>
+                            <a href="https://www.deccanherald.com/archives">Archives </a>
+                            <a href="https://www.deccanherald.com/sitemap">Sitemap</a>
+                            <a href="https://dhclassifieds.com/deccanonline/">Classifieds</a>
+                            <a href="http://printersmysore.com/contact">Conatact</a>
+                        </div>
+                        <h3>OUR GROUP SITES</h3>
+                        <div class="flex">
+                            <a href="http://printersmysore.com/">Printers Mysore</a>
+                            <a href="http://www.prajavani.net/">Prajavani</a>
+                            <a href="http://sudhaezine.com/">Sudha</a>
+                            <a href="http://mayuraezine.com/">Mayura</a>
+                            <a href="https://www.exammastermind.com/">Exam Matermind</a>
+                        </div>
+                        <div class="flex">
+                            <a href="https://www.deccanherald.com/privacy-policy">Privacy Policy</a>
+                            <a href="https://www.deccanherald.com/terms">Terms</a>
+                            <a href="https://www.deccanherald.com/disclaimer">Disclaimer</a>
+                            <a href="https://www.deccanherald.com/grievance-redressal">Grievance Redressal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
